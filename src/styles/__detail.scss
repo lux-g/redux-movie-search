@@ -1,0 +1,128 @@
+.detail-banner {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    &__img {
+      max-width: 300px;
+      @media (max-width: 1000px) {
+        max-width: 275px;
+      }
+      @media (max-width: 750px) {
+        max-width: 200px;
+      }
+    }
+}
+.details-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  
+}
+.detail-wrapper {
+  width: 100%;
+  display: flex;
+  
+  @media (max-width: 750px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.detail-movie {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 0px;
+  position: absolute;
+  @media (max-width: 750px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .detail-image {
+    padding-right: 25px;
+    @media (max-width: 750px) {
+      margin-bottom: 20px;
+      padding-right: 0px;
+    }
+  }
+  .detail-info {
+    padding: 0px 20px;
+    margin-right: 0 auto;
+
+    @media (max-width: 750px) {
+      text-align: center;
+    }
+    &__title {
+      color: #e5e5e5;
+      font-family: "hindReg";
+      font-weight: 500;
+      position: relative;
+      letter-spacing: -2px;
+      font-size: 58px;
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      @media (max-width: 750px) {
+        font-size: 38px;
+      }
+    }
+    &__runtime {
+      color: #e5e5e5;
+      font-family: "hindReg";
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    &__genres {
+      display: flex;
+      flex-wrap: wrap;
+      color: #e5e5e5;
+      font-family: "hindReg";
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 18px;
+      @media (max-width: 750px) {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+    }
+    &__tagline {
+      color: #e5e5e5;
+      font-family: "hindReg";
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-style: italic;
+    }
+    &__overview {
+      color: #e5e5e5;
+      font-family: "hindReg";
+      font-size: 18px;
+      text-align: left;
+    }
+    &__btn {
+      cursor: pointer;
+      padding: 8px 16px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 5px;
+      background-color: #222222;
+      color: #E5E5E5;
+      margin-bottom: 20px;
+      font-family: "hindBold";
+      letter-spacing: 0.4px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

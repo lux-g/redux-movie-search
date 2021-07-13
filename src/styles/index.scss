@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "hindReg";
+  src: url(../fonts/Hind-Regular.ttf);
+}
+@font-face {
+  font-family: "hindBold";
+  src: url(../fonts/Hind-Bold.ttf);
+}
+@font-face {
+  font-family: "hindlight";
+  src: url(../fonts/Hind-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #141414;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h1 {
+    color:#e5e5e5;
+    font-family: "hindReg";
+  }
+}
+
+@import './_searched';
+@import './_banner';
+@import './_detail';
+@import './_similar';
+@import './_nav';
+@import './_home';
+@import './_movierow';
+@import './_credits';
+@import './_crew';
+@import './_footer';
+
+

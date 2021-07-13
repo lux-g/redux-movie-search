@@ -1,0 +1,58 @@
+.nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    height: 60px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 400ms ease-in-out;
+    &__left-nav {
+      margin-right: 20px;
+      img {
+        max-width: 50px;
+    }
+}
+  
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+}
+form input {
+    font-family: "hindlight";
+    width: 100%;
+    border: 1px solid #8b8b8b;
+    color: #E3E0E0;
+    padding: 5px 30px;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    &::placeholder {
+    color: #E3E0E0;
+    }
+     @media (max-width: 600px) {
+        max-width: 200px;
+    }
+}
+.search-icon {
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    font-size: 20px;
+    color: #E3E0E0;
+   }
+}
+
+
+//add background color to navbar
+.nav-color {
+    background: #141414;
+}

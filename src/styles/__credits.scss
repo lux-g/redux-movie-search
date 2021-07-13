@@ -1,0 +1,53 @@
+.cast-wrapper {
+    margin-bottom: 10px;
+    &__title {
+        color: #e5e5e5;
+        font-family: "hindBold";
+        margin-bottom: 10px;
+        font-size: 24px;
+        margin-top: 20px;
+        @media (max-width: 750px) {
+            margin-top: 100px;
+            text-align: center;
+        }
+        @media (max-width: 500px) {
+            text-align: left;
+            padding: 0px 20px;
+        }
+    }
+    &__cast {
+        display: flex;
+        flex-wrap: wrap;
+        color: #e5e5e5;
+        font-family: "hindReg";
+        @media (max-width: 750px) {
+            justify-content: center;
+        }
+    }
+}
+.cast-details {
+    margin: 10px;
+    max-width: 135px;
+    @media (max-width: 750px) {
+        max-width: 100px;
+    }
+    @media (max-width: 500px) {
+        max-width: 80px;
+    }
+    &__cast-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    &__cast-names {
+        text-align: left;
+        overflow: hidden;
+        display: inline-block;
+    }
+    &__cast-char {
+        color: gray;
+    }
+}
+
+.cast-details-wrapper {
+    display: inline-block
+}

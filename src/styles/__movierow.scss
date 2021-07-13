@@ -1,0 +1,14 @@
+.movie-images img {
+    max-width: 306px;
+    width: 100%;
+    &:hover {
+      opacity: 0.6;
+    }
+    @media (max-width: 1600px) {
+      max-width: 406px;
+    }
+  }
+  .movie-row {
+    margin-bottom: 20px;
+  }
+  

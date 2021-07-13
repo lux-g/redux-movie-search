@@ -1,0 +1,11 @@
+.similar-more {
+    color: #e5e5e5;
+    font-family: "hindReg";
+    font-weight: 500;
+    @media (max-width: 750px) {
+        margin-top: 100px;
+    }
+}
+.similar {
+    display: flex;
+}

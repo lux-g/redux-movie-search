@@ -1,0 +1,21 @@
+.footer {
+    color: #e5e5e5;
+    font-family: "hindReg";
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.fa-icon {
+    margin: 0px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    &:hover {
+        color: gray;
+    }
+}
