@@ -1,4 +1,6 @@
 # Movie Search site w/ React & Redux
+https://movie-search-site.netlify.app/
+
 Used API from https://www.themoviedb.org/
 
 Home Page - 
