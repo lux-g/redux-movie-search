@@ -17,18 +17,19 @@ export const SearchResults = () => {
     
     const { searched } = useSelector((state) => state.movies)
 
-    console.log(searched)
+    //filters search so it doesnt show this movie, the tile is undefined
+    const filteredSearch = searched.filter(search => search.id != "680304")
 
     return (
         <>
-        {searched.length === 0 ? (
+        {filteredSearch.length === 0 ? (
             <div className="no-results">
                 <h1>No Results Found</h1>
             </div>
         ) : (
             <div className="search-results-container">
                 <div className="search-results">
-                    {searched?.filter(movie => movie.poster_path).map((movie, index) =>(
+                    {filteredSearch?.filter(movie => movie.poster_path).map((movie, index) =>(
                         <div className="search-wrapper" key={index}>
                             <Link to={`/movie/${movie.id}`}>
                                 <img className="searched-img" src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt="" />
